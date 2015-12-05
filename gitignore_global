@@ -1,0 +1,129 @@
+# Original from: http://help.github.com/ignore-files/
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+/target
+/classes
+
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.cache
+
+# Logs and databases #
+######################
+*.tmp
+
+# Backups #
+###########
+*.bak
+*.backup
+*.bak_20[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+
+# vim swap files     #
+######################
+.*.swp
+
+
+# Mac OS generated files #
+##########################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+
+# To ignore the icon hidden file added by Mac OS X when the folder has a custom icon,
+# instead of "Icon?" or "Icon\r", add TWO (sic) CRLF control characters.
+# (From http://blog.bitfluent.com/post/173740409/ignoring-icon-in-gitignore)
+# In vi(m) type CTRL-V + CTRL-M to insert one CRLF control character.
+# Those control characters will then appear in vim as "^M" in blue color to indicate that they are invisible.
+# (From http://www.bo.infn.it/alice/alice-doc/mll-doc/linux/vi-ex/node15.html)
+Icon
+
+
+
+# Xcode generated files #
+#########################
+*xcuserdata
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+
+# Clojure with Leiningen #
+##########################
+/checkouts
+.lein-deps-sum
+.lein-failures
+.lein-plugins
+.classpath
+.settings
+.project
+.lein-repl-history
+.nrepl-port
+
+# If generating the pom for a Clojure project with Leiningen, add "pom.xml" to the local .gitignore
+# and regenerate if when needed with "lein pom"
+
+
+# LaTeX #
+#########
+# Original from: https://gist.github.com/kogakure/149016
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+
+# Sublime Text 2 #
+##################
+*.sublime-project
+*.sublime-workspace
+
+# General folder for untracked files
+####################################
+git-untracked/

@@ -1,0 +1,9 @@
+--- 
+gem: --no-rdoc --no-ri --no-doc
+verbose: true
+backtrace: false
+bulk_threshold: 1000
+benchmark: false
+update_sources: true
+sources:
+- http://rubygems.org/
