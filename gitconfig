@@ -1,6 +1,6 @@
 [user]
   name = Dmitry Kovalevsky
-  email = crossonrails@gmail.com	
+  email = crossonrails@gmail.com
 [core]
   excludesfile = /Users/local/.gitignore_global
   quotepath = false

@@ -10,7 +10,8 @@ export EDITOR=vim
 export VISUAL=vim
 
 ZSH_THEME="theunraveler"
-plugins=(git brew bundler gem)
+plugins=(git rails brew bundler gem)
+
 source $ZSH/oh-my-zsh.sh
 
 alias psa="ps aux"
@@ -19,8 +20,11 @@ alias psr="ps aux | grep ruby"
 
 alias hg="history | grep "
 
+alias dud='du -d 1 -h'
+alias duf='du -sh *'
 alias df="df -h"
-alias du="du -h -d 2"
+alias fd='find . -type d -name'
+alias ff='find . -type f -name'
 
 alias gz="tar -zcvf"
 
@@ -28,17 +32,8 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-alias ll="ls -alGh"
-alias ls="ls -Gh"
-
-alias bi="bundle install"
-
 alias capp="cap production "
 alias capd="cap dev "
-
-alias rs="rails s"
-alias rc="rails c"
-alias rsp="rails s -p "
 
 alias pr="cd ~/Projects"
 

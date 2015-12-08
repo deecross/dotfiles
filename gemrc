@@ -1,4 +1,4 @@
---- 
+---
 gem: --no-rdoc --no-ri --no-doc
 verbose: true
 backtrace: false
