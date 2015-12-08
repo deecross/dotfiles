@@ -2,7 +2,7 @@
   name = Dmitry Kovalevsky
   email = crossonrails@gmail.com
 [core]
-  excludesfile = /Users/local/.gitignore_global
+  excludesfile = <%= ENV['HOME'] %>/.gitignore_global
   quotepath = false
   autocrlf = input
 [alias]
@@ -12,4 +12,7 @@
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[github]
+  user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
+  token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
 
