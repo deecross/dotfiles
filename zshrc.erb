@@ -2,7 +2,7 @@ ZSH_THEME="theunraveler"
 plugins=(git rails brew bundler gem sublime)
 
 source $ZSH/oh-my-zsh.sh
-source <%= ENV['HOME'] %>/aliases.zsh
+source <%= ENV['HOME'] %>/.aliases
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
