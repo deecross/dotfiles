@@ -1,0 +1,10 @@
+CAPUSER=<%= print("Capistrano user: "); STDOUT.flush; STDIN.gets.chomp %>
+
+export HISTCONTROL=ignoreboth
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export ZSH="<%= ENV['HOME'] %>/.oh-my-zsh"
+export PATH="<%= ENV['HOME'] %>/.rbenv/shims:<%= ENV['HOME'] %>/.rbenv/bin:/usr/local/php5/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:<%= ENV['HOME'] %>/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+
+export EDITOR=vim
+export VISUAL=vim
