@@ -15,6 +15,7 @@ alias gz="tar -zcvf"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias killruby="ps aux | grep ruby | grep -v grep | awk '{print $2}' | xargs kill"
 
 alias capp="cap production "
 alias capd="cap dev "
