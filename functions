@@ -1,0 +1,9 @@
+ghcl() {
+  if [ $1 ]
+  then
+    gcl git@github.com:$1.git
+  else
+    echo "author/repo was not specified..."
+  fi
+}
+compdef ghcl
