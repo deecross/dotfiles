@@ -21,3 +21,8 @@ alias capp="cap production "
 alias capd="cap dev "
 
 alias pr="cd ~/Projects"
+
+for dir_name in ~/Projects/*
+do
+  alias `echo $dir_name | cut -d'/' -f 5`="cd $dir_name"
+done
