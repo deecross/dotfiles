@@ -7,3 +7,26 @@ ghcl() {
   fi
 }
 compdef ghcl
+
+ngxc() {
+  if [ $1 ]
+  then
+    if [ $NGINX_PATH ]
+    then
+      if [ -f $NGINX_PATH/conf.d/$1.dev.conf ]
+      then
+        sudo nano $NGINX_PATH/conf.d/$1.dev.conf
+      else
+        echo "Config file not found. Is NGINX_PATH correct? (It can be checked in .zshenv file in the home dir)"
+      fi
+    else
+      echo "Specify your nginx conf folder:"
+      read NGINX_PATH
+      echo "export NGINX_PATH=\"$NGINX_PATH\"" >> ~/.zshenv
+      sudo nano $NGINX_PATH/conf.d/$1.dev.conf
+    fi
+  else
+    echo "app name was not specified..."
+  fi
+}
+compdef ngxc
