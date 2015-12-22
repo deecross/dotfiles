@@ -30,3 +30,19 @@ ngxc() {
   fi
 }
 compdef ngxc
+
+sti() {
+  if [ $1 ]
+  then
+    if [ -d ~/Projects/$1 ]
+    then
+      cp ~/.stproject ~/Projects/$1/$1.sublime-project
+      st ~/Projects/$1/$1.sublime-project
+    else
+      echo "Project directory not found..."
+    fi
+  else
+    echo "app name was not specified..."
+  fi
+}
+compdef sti
