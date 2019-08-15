@@ -16,9 +16,6 @@ alias killruby="ps aux | grep ruby | grep -v grep | awk '{print \$2}' | xargs ki
 alias capp="cap production "
 alias capd="cap dev "
 
-alias gcos="git checkout staging"
-alias gcop="git checkout -"
-
 alias pr="cd ~/Projects"
 
 for dir_name in ~/Projects/*
