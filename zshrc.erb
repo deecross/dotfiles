@@ -1,10 +1,8 @@
 ZSH_THEME="wezm"
-plugins=(git common-aliases rails bundler gem npm)
+plugins=(git common-aliases rails npm)
 
 source $ZSH/oh-my-zsh.sh
 source <%= ENV['HOME'] %>/.aliases
 source <%= ENV['HOME'] %>/.functions
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 cd ~/Projects
