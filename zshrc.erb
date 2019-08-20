@@ -1,8 +1,10 @@
 ZSH_THEME="theunraveler"
-plugins=(git common-aliases rails npm)
+plugins=(git common-aliases rails bundler gem npm yarn)
 
 source $ZSH/oh-my-zsh.sh
 source <%= ENV['HOME'] %>/.aliases
 source <%= ENV['HOME'] %>/.functions
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 cd ~/Projects
