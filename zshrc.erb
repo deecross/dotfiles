@@ -33,4 +33,8 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+pyenv shell 3.8.0
+
 cd ~/Projects
