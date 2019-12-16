@@ -30,9 +30,5 @@ let g:netrw_browse_split = 4
 let g:netrw_alto = 0
 let g:netrw_winsize = 25
 let g:mapleader=','
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
 
 map <Leader> <Plug>(easymotion-prefix)
