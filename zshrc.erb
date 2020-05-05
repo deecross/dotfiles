@@ -5,6 +5,9 @@ source $ZSH/oh-my-zsh.sh
 source <%= ENV['HOME'] %>/.aliases
 source <%= ENV['HOME'] %>/.functions
 
+bindkey '[C' forward-word # [Ctrl-RightArrow] - move forward one word
+bindkey '[D' backward-word # [Ctrl-LeftArrow] - move backward one word
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export NVM_DIR="$HOME/.nvm"
